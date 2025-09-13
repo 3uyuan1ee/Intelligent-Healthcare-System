@@ -158,7 +158,6 @@ Intelligent-Healthcare-System/
 ├── CMakeLists.txt              # 主构建文件
 ├── README.md                   # 项目说明
 ├── LICENSE                     # 开源协议
-├── CLAUDE.md                   # 开发指南
 ├── Standard.h                  # 通用头文件
 ├── main.cpp                    # 程序入口
 ├── resources.qrc              # Qt资源文件
