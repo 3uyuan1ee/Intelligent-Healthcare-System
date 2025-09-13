@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>doctorAdviceMenuClient</class>
+ <widget class="QWidget" name="doctorAdviceMenuClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>879</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>879</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>医嘱管理系统</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 主窗口样式 */
+QWidget {
+    background-color: #f8fafc;
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    color: #334155;
+}
+
+/* 标签样式 */
+QLabel {
+    font-size: 16px;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* 下拉框样式 */
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 14px;
+    min-height: 20px;
+    color: #334155;
+}
+
+QComboBox:focus {
+    border: 1px solid #3b82f6;
+    outline: none;
+}
+
+QComboBox:hover {
+    border: 1px solid #cbd5e1;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left: 1px solid #e2e8f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #64748b;
+    width: 0;
+    height: 0;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: white;
+    selection-background-color: #e0f2fe;
+    selection-color: #0369a1;
+    outline: 0;
+    padding: 4px;
+}
+
+QComboBox QAbstractItemView::item {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #e0f2fe;
+}
+
+/* 按钮样式 */
+QPushButton {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #2563eb;
+}
+
+QPushButton:pressed {
+    background-color: #1d4ed8;
+}
+
+QPushButton:focus {
+    outline: 2px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+/* 列表部件样式 */
+QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px;
+    outline: 0;
+    font-size: 14px;
+    gridline-color: #f1f5f9;
+    alternate-background-color: #f8fafc;
+}
+
+QListWidget::item {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+QListWidget::item:selected {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border: none;
+}
+
+QListWidget::item:hover {
+    background-color: #f1f5f9;
+}
+
+/* 滚动条样式 */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f1f5f9;
+    width: 10px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #cbd5e1;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #94a3b8;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: #f1f5f9;
+    height: 10px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #cbd5e1;
+    border-radius: 5px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #94a3b8;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>701</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>请选择需要修改的医嘱</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="minimumSize">
+       <size>
+        <width>400</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>编辑</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>120</y>
+     <width>700</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>700</width>
+     <height>400</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>700</width>
+     <height>400</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

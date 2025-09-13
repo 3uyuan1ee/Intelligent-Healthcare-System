@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icons/LoginBackground_1.png</file>
+        <file>resources/icons/LoginBackground_2.png</file>
+        <file>resources/icons/adminIcon.png</file>
+        <file>resources/icons/doctorIcon.png</file>
+        <file>resources/icons/patientIcon.png</file>
+        <file>resources/icons/1注册登录a.png</file>
+        <file>resources/icons/1注册登录b.png</file>
+        <file>resources/icons/1注册登录c.png</file>
+        <file>resources/icons/1注册登录d.png</file>
+        <file>resources/icons/1注册登录e.png</file>
+        <file>resources/icons/1注册登录f.png</file>
+        <file>resources/icons/2医生患者a.png</file>
+        <file>resources/icons/2医生患者b.png</file>
+        <file>resources/icons/2医生患者c.png</file>
+        <file>resources/icons/3医生个人信息.png</file>
+        <file>resources/icons/3医生患者个人信息.jpg</file>
+        <file>resources/icons/3患者个人信息.png</file>
+        <file>resources/icons/4健康评估.png</file>
+        <file>resources/icons/5医患沟通.png</file>
+    </qresource>
+</RCC>

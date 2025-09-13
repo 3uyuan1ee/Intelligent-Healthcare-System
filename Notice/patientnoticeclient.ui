@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>patientNoticeClient</class>
+ <widget class="QWidget" name="patientNoticeClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>891</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>医患沟通</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+/* 主窗口样式 */
+QWidget {
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* 列表控件样式 */
+QListWidget {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 13px;
+    outline: none;
+}
+
+QListWidget::item {
+    background-color: white;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+QListWidget::item:selected {
+    background-color: #e3eef9;
+    color: #2c6bb6;
+    border-left: 3px solid #4a90e2;
+}
+
+QListWidget::item:hover {
+    background-color: #f8fafc;
+}
+
+/* 滚动条样式 */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f1f5f9;
+    width: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #cbd5e1;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #94a3b8;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* 输入框样式 */
+QLineEdit {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #1f2937;
+    selection-background-color: #4a90e2;
+    selection-color: white;
+}
+
+QLineEdit:focus {
+    border: 1px solid #4a90e2;
+    background-color: #f0f7ff;
+    outline: none;
+}
+
+QLineEdit:hover {
+    border: 1px solid #cbd5e1;
+}
+
+QLineEdit:placeholder {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+/* 按钮样式 */
+QPushButton {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    min-width: 60px;
+}
+
+QPushButton:hover {
+    background-color: #3a7bc8;
+    transform: translateY(-1px);
+}
+
+QPushButton:pressed {
+    background-color: #2c6bb6;
+    transform: translateY(1px);
+}
+
+QPushButton:disabled {
+    background-color: #cbd5e1;
+    color: #94a3b8;
+}
+
+/* 布局容器样式 */
+#horizontalLayoutWidget {
+    background-color: transparent;
+}
+   </string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>381</width>
+     <height>231</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>280</y>
+     <width>381</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="placeholderText">
+       <string>输入消息内容...</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>发送</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QListWidget" name="listWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>70</y>
+     <width>381</width>
+     <height>251</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>30</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>历史通知</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

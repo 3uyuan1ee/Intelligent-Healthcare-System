@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>patientCaseMenuClient</class>
+ <widget class="QWidget" name="patientCaseMenuClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>879</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>879</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>病例查看</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+/* 主窗口样式 */
+QWidget {
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    background-color: #f8fafc;
+}
+
+/* 标签样式 */
+QLabel {
+    background-color: transparent;
+}
+
+/* 列表控件样式 */
+QListWidget {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+QListWidget::item {
+    background-color: white;
+    border: 1px solid #f1f5f9;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 6px;
+    font-size: 13px;
+}
+
+QListWidget::item:selected {
+    background-color: #e3eef9;
+    color: #2c6bb6;
+    border: 1px solid #4a90e2;
+    border-left: 4px solid #4a90e2;
+}
+
+QListWidget::item:hover {
+    background-color: #f8fafc;
+    border-color: #e2e8f0;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+/* 病例信息样式 */
+QListWidget::item QLabel {
+    font-weight: 500;
+    color: #374151;
+}
+
+QListWidget::item QLabel[class="case-date"] {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+QListWidget::item QLabel[class="case-diagnosis"] {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+/* 滚动条样式 */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f1f5f9;
+    width: 10px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #cbd5e1;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #94a3b8;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    height: 10px;
+    background-color: #f1f5f9;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #cbd5e1;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+/* 图片样式 */
+QLabel[scaledContents="true"] {
+    border-radius: 8px;
+}
+
+/* 标题样式 */
+#titleLabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    border-bottom: 2px solid #4a90e2;
+}
+   </string>
+  </property>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>-60</y>
+     <width>71</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/resources/icons/1注册登录d.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">opacity: 0.1;</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="patientCaseListWidget">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>600</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>600</width>
+     <height>400</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>600</width>
+     <height>360</height>
+    </size>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="autoScroll">
+    <bool>true</bool>
+   </property>
+   <property name="movement">
+    <enum>QListView::Movement::Static</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

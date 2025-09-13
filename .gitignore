@@ -1,0 +1,164 @@
+# Build directories
+build/
+Build/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+*.AppDir/
+*.app/
+*.bundle/
+*.dmg/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Qt specific
+*.pro.user*
+*.qmlproject.user*
+*.autosave
+*.qm
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+Makefile*
+*.prl
+*.la
+*.a
+*.lib
+*.o
+*.obj
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.nfs*
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeDoxyfile
+CMakeDoxygenDefaults.cmake
+*.cmake
+
+# Qt Creator
+*.config
+*.creator
+*.files
+*.includes
+*.cflags
+*.cxxflags
+*.creator.user
+
+# Compiled Object files
+*.o
+*.ko
+*.obj
+*.lo
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Output directories
+dist/
+out/
+bin/
+lib/
+
+# Cache directories
+.cache/
+*.cache
+Cache/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database files (if any local test databases)
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration files with sensitive data
+config_local.h
+config_local.cpp
+*local_config*
+.env
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Test coverage
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# Package managers
+package-lock.json
+yarn.lock
+Cargo.lock
+Gemfile.lock
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+
+# Project specific
+Server/server
+*.pid
+*.socket

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminNoticeClient</class>
+ <widget class="QWidget" name="adminNoticeClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>系统通知</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+/* 主窗口样式 */
+QWidget {
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* 文本编辑框样式 */
+QTextEdit {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    color: #1f2937;
+    selection-background-color: #4a90e2;
+    selection-color: white;
+}
+
+QTextEdit:focus {
+    border: 1px solid #4a90e2;
+    background-color: #f0f7ff;
+    outline: none;
+}
+
+QTextEdit:hover {
+    border: 1px solid #cbd5e1;
+}
+
+QTextEdit::placeholder {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+/* 按钮样式 */
+QPushButton {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+QPushButton:hover {
+    background-color: #3a7bc8;
+    transform: translateY(-1px);
+}
+
+QPushButton:pressed {
+    background-color: #2c6bb6;
+    transform: translateY(1px);
+}
+
+QPushButton:disabled {
+    background-color: #cbd5e1;
+    color: #94a3b8;
+}
+   </string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>240</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送系统通知</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>351</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入系统通知内容...</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
