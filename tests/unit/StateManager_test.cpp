@@ -2,6 +2,8 @@
 #include <QSignalSpy>
 #include <QThread>
 #include <QMetaEnum>
+#include <QThreadPool>
+#include <QtConcurrent/QtConcurrent>
 #include "../../Instance/StateManager.h"
 #include "../config/test_config.h"
 

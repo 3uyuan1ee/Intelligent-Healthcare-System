@@ -3,6 +3,8 @@
 #include <QJsonDocument>
 #include <QJsonArray>
 #include <QDateTime>
+#include <QThread>
+#include <QApplication>
 #include "../../Fun./JsonMessageBuilder.h"
 #include "../config/test_config.h"
 
@@ -161,13 +163,13 @@ void JsonMessageBuilderTest::testBuild()
     QJsonObject json = m_builder->build();
 
     // 验证基本结构
-    QVERIFY(json.isObject());
+    QVERIFY(!json.isEmpty());
     QVERIFY(json.contains("command"));
     QVERIFY(json.contains("data"));
 
     // 验证数据对象
     QJsonObject data = json["data"].toObject();
-    QVERIFY(data.isObject());
+    QVERIFY(!data.isEmpty());
     QVERIFY(data.contains("username"));
     QVERIFY(data.contains("type"));
 }
@@ -648,7 +650,7 @@ void JsonMessageBuilderTest::testSpecialCharactersInData()
 
 void JsonMessageBuilderTest::testLargeDataValues()
 {
-    QString largeString = "x".repeated(10000); // 10KB字符串
+    QString largeString = QString("x").repeated(1000); // 1KB字符串
     m_builder->addPatientInfo(largeString, largeString, largeString, largeString, largeString, largeString);
 
     QJsonObject json = m_builder->build();

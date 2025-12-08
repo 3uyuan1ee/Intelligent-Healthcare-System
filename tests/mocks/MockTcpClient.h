@@ -3,10 +3,13 @@
 
 #include <QObject>
 #include <QJsonObject>
+#include <QJsonArray>
 #include <QByteArray>
 #include <QTimer>
 #include <QQueue>
 #include <QMutex>
+#include <QRandomGenerator>
+#include <QThread>
 #include "../config/test_config.h"
 
 class MockTcpClient : public QObject

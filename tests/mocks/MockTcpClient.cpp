@@ -268,9 +268,7 @@ void MockTcpClient::processReceivedData(const QByteArray &data)
         } else if (command == "getAppointments") {
             QJsonObject response;
             response["reply"] = "success";
-            QJsonArray appointments;
-            appointments.append(TestConfig::createMockAppointmentData());
-            response["data"] = appointments;
+            response["data"] = TestConfig::createMockAppointmentData();
             simulateServerResponse(response);
         }
     }
