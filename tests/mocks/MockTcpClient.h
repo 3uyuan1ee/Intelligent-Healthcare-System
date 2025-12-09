@@ -40,6 +40,7 @@ public:
     void simulateServerResponse(const QJsonObject &response);
     void simulateError(const QString &error);
     void simulateConnectionLoss();
+    void simulateReceivedData(const QByteArray &data);
     void clearHistory();
 
     // 测试验证方法

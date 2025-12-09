@@ -162,3 +162,4 @@ Gemfile.lock
 Server/server
 *.pid
 *.socket
+/CLAUDE.md

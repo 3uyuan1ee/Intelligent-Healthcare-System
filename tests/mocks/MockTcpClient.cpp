@@ -182,6 +182,12 @@ void MockTcpClient::simulateConnectionLoss()
     }
 }
 
+void MockTcpClient::simulateReceivedData(const QByteArray &data)
+{
+    // 直接处理接收到的数据
+    processReceivedData(data);
+}
+
 void MockTcpClient::clearHistory()
 {
     QMutexLocker locker(&m_historyMutex);
