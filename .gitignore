@@ -116,6 +116,8 @@ config_local.h
 config_local.cpp
 *local_config*
 .env
+Server/database_config.h
+Server/database_local.cpp
 
 # Backup files
 *.bak

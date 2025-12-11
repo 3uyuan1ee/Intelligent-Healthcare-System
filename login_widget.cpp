@@ -66,7 +66,8 @@ Login_Widget::Login_Widget(QWidget *parent)
 
     // 连接到服务器
     // tcpClient->connectToServer("82.156.140.2", 1437);
-    tcpClient->connectToServer("43.143.238.230", 1437);
+    // tcpClient->connectToServer("43.143.238.230", 1437);
+    tcpClient->connectToServer("localhost", 1437);
     // tcpClient->connectToServer("43.143.238.230", 8080);
     qDebug() << "TCP 客户端初始化完成，正在连接服务器...";
 }
